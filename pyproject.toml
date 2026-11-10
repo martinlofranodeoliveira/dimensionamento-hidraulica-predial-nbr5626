@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dimensionamento-hidraulica-predial-nbr5626"
+version = "1.0.0"
+description = "Dimensionamento determinístico de redes prediais de água fria e quente (ABNT NBR 5626:2020) em frações e grandezas inteiras exatas. Zero dependências, Python 3.11+, MIT — LOFRANO TECNOLOGIA."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "LOFRANO TECNOLOGIA" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Office/Business",
+]
+dependencies = []
+
+[project.scripts]
+hidraulica-nbr5626 = "hidraulica_predial.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

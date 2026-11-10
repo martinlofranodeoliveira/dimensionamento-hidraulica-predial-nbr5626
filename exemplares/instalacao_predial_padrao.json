@@ -1,0 +1,201 @@
+{
+  "nome_edificacao": "Residência Unifamiliar Padrão - Sobrado",
+  "descricao": "Instalação predial de água fria atendendo banheiro social, cozinha e lavanderia.",
+  "pressao_disponivel_inicial_mmca": 2000,
+  "no_origem_principal": "RES",
+  "criterio_velocidade_maxima_mms": 3000,
+  "criterio_pressao_estatica_max_mmca": 40000,
+  "criterio_pressao_dinamica_min_mmca": 1000,
+  "trechos": [
+    {
+      "id_trecho": "T1",
+      "no_origem": "RES",
+      "no_destino": "BAR",
+      "comprimento_real_mm": 2000,
+      "desnivel_geometrico_mm": 1500,
+      "dn_fixado": 32,
+      "conexoes": [
+        {
+          "tipo": "SAIDA_CANALIZACAO",
+          "quantidade": 1
+        },
+        {
+          "tipo": "REGISTRO_GAVETA_ABERTO",
+          "quantidade": 1
+        }
+      ],
+      "aparelhos_diretos": []
+    },
+    {
+      "id_trecho": "T2",
+      "no_origem": "BAR",
+      "no_destino": "COL1",
+      "comprimento_real_mm": 4500,
+      "desnivel_geometrico_mm": 1000,
+      "dn_fixado": 25,
+      "conexoes": [
+        {
+          "tipo": "TE_PASSAGEM_DIRETA",
+          "quantidade": 1
+        },
+        {
+          "tipo": "JOELHO_90",
+          "quantidade": 2
+        }
+      ],
+      "aparelhos_diretos": []
+    },
+    {
+      "id_trecho": "T3",
+      "no_origem": "COL1",
+      "no_destino": "BANH",
+      "comprimento_real_mm": 2800,
+      "desnivel_geometrico_mm": 2200,
+      "conexoes": [
+        {
+          "tipo": "TE_SAIDA_LATERAL",
+          "quantidade": 1
+        },
+        {
+          "tipo": "REGISTRO_GAVETA_ABERTO",
+          "quantidade": 1
+        }
+      ],
+      "aparelhos_diretos": []
+    },
+    {
+      "id_trecho": "T4",
+      "no_origem": "BANH",
+      "no_destino": "CHUV",
+      "comprimento_real_mm": 1200,
+      "desnivel_geometrico_mm": -600,
+      "conexoes": [
+        {
+          "tipo": "TE_PASSAGEM_DIRETA",
+          "quantidade": 1
+        },
+        {
+          "tipo": "JOELHO_90",
+          "quantidade": 2
+        },
+        {
+          "tipo": "REGISTRO_PRESSAO_ABERTO",
+          "quantidade": 1
+        }
+      ],
+      "aparelhos_diretos": [
+        {
+          "codigo_aparelho": "CHUVEIRO_ELETRICO",
+          "descricao": "Chuveiro do banheiro social",
+          "quantidade": 1
+        }
+      ]
+    },
+    {
+      "id_trecho": "T5",
+      "no_origem": "BANH",
+      "no_destino": "LAV",
+      "comprimento_real_mm": 1500,
+      "desnivel_geometrico_mm": 1200,
+      "conexoes": [
+        {
+          "tipo": "TE_PASSAGEM_DIRETA",
+          "quantidade": 1
+        },
+        {
+          "tipo": "JOELHO_90",
+          "quantidade": 2
+        }
+      ],
+      "aparelhos_diretos": [
+        {
+          "codigo_aparelho": "LAVATORIO",
+          "descricao": "Lavatório do banheiro",
+          "quantidade": 1
+        }
+      ]
+    },
+    {
+      "id_trecho": "T6",
+      "no_origem": "BANH",
+      "no_destino": "BACIA",
+      "comprimento_real_mm": 2200,
+      "desnivel_geometrico_mm": 1800,
+      "conexoes": [
+        {
+          "tipo": "TE_SAIDA_LATERAL",
+          "quantidade": 1
+        },
+        {
+          "tipo": "JOELHO_90",
+          "quantidade": 2
+        }
+      ],
+      "aparelhos_diretos": [
+        {
+          "codigo_aparelho": "BACIA_CAIXA_ACOPLADA",
+          "descricao": "Bacia sanitária c/ caixa",
+          "quantidade": 1
+        }
+      ]
+    },
+    {
+      "id_trecho": "T7",
+      "no_origem": "BAR",
+      "no_destino": "COZ",
+      "comprimento_real_mm": 6000,
+      "desnivel_geometrico_mm": 4500,
+      "dn_fixado": 25,
+      "conexoes": [
+        {
+          "tipo": "TE_SAIDA_LATERAL",
+          "quantidade": 1
+        },
+        {
+          "tipo": "JOELHO_90",
+          "quantidade": 3
+        },
+        {
+          "tipo": "REGISTRO_GAVETA_ABERTO",
+          "quantidade": 1
+        }
+      ],
+      "aparelhos_diretos": [
+        {
+          "codigo_aparelho": "PIA_COZINHA",
+          "descricao": "Pia da cozinha",
+          "quantidade": 1
+        }
+      ]
+    },
+    {
+      "id_trecho": "T8",
+      "no_origem": "COZ",
+      "no_destino": "LAVAND",
+      "comprimento_real_mm": 3500,
+      "desnivel_geometrico_mm": 0,
+      "conexoes": [
+        {
+          "tipo": "TE_PASSAGEM_DIRETA",
+          "quantidade": 1
+        },
+        {
+          "tipo": "JOELHO_90",
+          "quantidade": 2
+        }
+      ],
+      "aparelhos_diretos": [
+        {
+          "codigo_aparelho": "TANQUE_LAVAR_ROUPA",
+          "descricao": "Tanque de lavar roupas",
+          "quantidade": 1
+        },
+        {
+          "codigo_aparelho": "MAQUINA_LAVAR_ROUPA",
+          "descricao": "Máquina de lavar roupas",
+          "quantidade": 1
+        }
+      ]
+    }
+  ]
+}

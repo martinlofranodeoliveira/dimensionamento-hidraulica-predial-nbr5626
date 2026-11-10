@@ -1,0 +1,225 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1128"/>
+      <stop offset="100%" stop-color="#101F42"/>
+    </linearGradient>
+    <linearGradient id="pipeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0077B6"/>
+      <stop offset="100%" stop-color="#00B4D8"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+  <!-- Fundo principal -->
+  <rect width="1440" height="900" fill="url(#bgGrad)"/>
+
+  <!-- Cabeçalho Executivo -->
+  <rect x="30" y="25" width="1380" height="85" rx="10" fill="#1C2541" stroke="#3A506B" stroke-width="1.5" filter="url(#cardShadow)"/>
+  <text x="55" y="60" fill="#FFFFFF" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700">
+    DIMENSIONAMENTO HIDRÁULICO PREDIAL · ABNT NBR 5626:2020
+  </text>
+  <text x="55" y="88" fill="#A7BED3" font-family="system-ui, -apple-system, sans-serif" font-size="14">
+    Edificação: <tspan fill="#48CAE4" font-weight="600">Residência Unifamiliar Padrão - Sobrado</tspan> · Aritmética Racional Inteira (Zero Float) · Padrão LOFRANO TECNOLOGIA
+  </text>
+
+  <!-- Status Badge -->
+  <rect x="1170" y="45" width="220" height="42" rx="21" fill="#06D6A0" fill-opacity="0.15" stroke="#06D6A0" stroke-width="2"/>
+  <circle cx="1195" cy="66" r="6" fill="#06D6A0"/>
+  <text x="1212" y="72" fill="#06D6A0" font-family="system-ui, -apple-system, sans-serif" font-size="14" font-weight="700">
+    CONFORME NBR 5626
+  </text>
+
+  <!-- 4 Cards de Indicadores de Desempenho (KPIs) -->
+  <!-- Card 1: Vazão Provável -->
+  <rect x="30" y="125" width="330" height="110" rx="8" fill="#1C2541" stroke="#3A506B" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="50" y="155" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="13">VAZÃO PROVÁVEL GLOBAL (Q)</text>
+  <text x="50" y="195" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="28" font-weight="800">
+    0,55 L/s
+  </text>
+  <text x="50" y="222" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">
+    Instalada: 1,30 L/s · ΣP: 3,4
+  </text>
+
+  <!-- Card 2: Ponto Mais Desfavorável -->
+  <rect x="380" y="125" width="330" height="110" rx="8" fill="#1C2541" stroke="#3A506B" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="400" y="155" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="13">PRESSÃO CRÍTICA (PONTO MAIS DESFAVORÁVEL)</text>
+  <text x="400" y="195" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="28" font-weight="800">
+    3,30 m.c.a.
+  </text>
+  <text x="400" y="222" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">
+    Nó terminal: BAR (Mínimo exigido: ≥ 1,00 m.c.a.)
+  </text>
+
+  <!-- Card 3: Pressão Estática Máxima -->
+  <rect x="730" y="125" width="330" height="110" rx="8" fill="#1C2541" stroke="#3A506B" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="750" y="155" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="13">PRESSÃO ESTÁTICA MÁXIMA NA REDE</text>
+  <text x="750" y="195" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="28" font-weight="800">
+    8,50 m.c.a.
+  </text>
+  <text x="750" y="222" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">
+    Nó: BACIA · Limite NBR 5626: ≤ 40,00 m.c.a.
+  </text>
+
+  <!-- Card 4: Tubulações e Aparelhos -->
+  <rect x="1080" y="125" width="330" height="110" rx="8" fill="#1C2541" stroke="#3A506B" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="1100" y="155" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="13">EXTENSÃO E APARELHOS</text>
+  <text x="1100" y="195" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="28" font-weight="800">
+    8 trechos · 6 pontos
+  </text>
+  <text x="1100" y="222" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">
+    Velocidade máx. controlada: v ≤ 3,00 m/s
+  </text>
+
+  <!-- Painel Central Esquerdo: Tabela Detalhada de Trechos Dimensionados -->
+  <rect x="30" y="255" width="880" height="580" rx="8" fill="#1C2541" stroke="#3A506B" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="50" y="285" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">
+    PLANILHA DE DIMENSIONAMENTO HIDRÁULICO DE TRECHOS (PVC NBR 5648)
+  </text>
+  <line x1="50" y1="300" x2="890" y2="300" stroke="#3A506B" stroke-width="1"/>
+
+  <!-- Cabeçalho da Tabela -->
+  <text x="50" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">TRECHO</text>
+  <text x="140" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">ROTA</text>
+  <text x="240" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">ΣP</text>
+  <text x="310" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">VAZÃO</text>
+  <text x="400" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">DN / BITOLA</text>
+  <text x="510" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">VELOCIDADE</text>
+  <text x="630" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">PERDA (Δh)</text>
+  <text x="750" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">P. DINÂMICA</text>
+  <text x="850" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">STATUS</text>
+  <line x1="50" y1="335" x2="890" y2="335" stroke="#3A506B" stroke-width="0.8"/>
+  <text x="50" y="360" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">T1</text>
+  <text x="140" y="360" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">RES → BAR</text>
+  <text x="240" y="360" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">3,4</text>
+  <text x="310" y="360" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12">0,55 L/s</text>
+  <text x="400" y="360" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DN 32 (1")</text>
+  <text x="510" y="360" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">0,91 m/s</text>
+  <text x="630" y="360" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">0,19 m.c.a.</text>
+  <text x="750" y="360" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">3,30 m.c.a.</text>
+  <text x="850" y="360" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">OK</text>
+  <rect x="45" y="378" width="850" height="26" fill="#223055" rx="4"/>
+  <text x="50" y="394" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">T2</text>
+  <text x="140" y="394" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">BAR → COL1</text>
+  <text x="240" y="394" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">1,0</text>
+  <text x="310" y="394" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12">0,30 L/s</text>
+  <text x="400" y="394" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DN 25 (3/4")</text>
+  <text x="510" y="394" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">0,81 m/s</text>
+  <text x="630" y="394" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">0,47 m.c.a.</text>
+  <text x="750" y="394" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">3,83 m.c.a.</text>
+  <text x="850" y="394" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">OK</text>
+  <text x="50" y="428" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">T7</text>
+  <text x="140" y="428" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">BAR → COZ</text>
+  <text x="240" y="428" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">2,4</text>
+  <text x="310" y="428" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12">0,46 L/s</text>
+  <text x="400" y="428" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DN 25 (3/4")</text>
+  <text x="510" y="428" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">1,26 m/s</text>
+  <text x="630" y="428" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">1,67 m.c.a.</text>
+  <text x="750" y="428" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">6,13 m.c.a.</text>
+  <text x="850" y="428" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">OK</text>
+  <rect x="45" y="446" width="850" height="26" fill="#223055" rx="4"/>
+  <text x="50" y="462" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">T3</text>
+  <text x="140" y="462" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">COL1 → BANH</text>
+  <text x="240" y="462" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">1,0</text>
+  <text x="310" y="462" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12">0,30 L/s</text>
+  <text x="400" y="462" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DN 20 (1/2")</text>
+  <text x="510" y="462" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">1,32 m/s</text>
+  <text x="630" y="462" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">0,98 m.c.a.</text>
+  <text x="750" y="462" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">5,04 m.c.a.</text>
+  <text x="850" y="462" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">OK</text>
+  <text x="50" y="496" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">T8</text>
+  <text x="140" y="496" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">COZ → LAVAND</text>
+  <text x="240" y="496" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">1,7</text>
+  <text x="310" y="496" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12">0,39 L/s</text>
+  <text x="400" y="496" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DN 20 (1/2")</text>
+  <text x="510" y="496" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">1,72 m/s</text>
+  <text x="630" y="496" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">1,96 m.c.a.</text>
+  <text x="750" y="496" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">4,17 m.c.a.</text>
+  <text x="850" y="496" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">OK</text>
+  <rect x="45" y="514" width="850" height="26" fill="#223055" rx="4"/>
+  <text x="50" y="530" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">T4</text>
+  <text x="140" y="530" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">BANH → CHUV</text>
+  <text x="240" y="530" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">0,4</text>
+  <text x="310" y="530" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12">0,20 L/s</text>
+  <text x="400" y="530" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DN 20 (1/2")</text>
+  <text x="510" y="530" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">0,88 m/s</text>
+  <text x="630" y="530" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">0,89 m.c.a.</text>
+  <text x="750" y="530" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">3,55 m.c.a.</text>
+  <text x="850" y="530" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">OK</text>
+  <text x="50" y="564" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">T5</text>
+  <text x="140" y="564" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">BANH → LAV</text>
+  <text x="240" y="564" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">0,3</text>
+  <text x="310" y="564" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12">0,15 L/s</text>
+  <text x="400" y="564" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DN 20 (1/2")</text>
+  <text x="510" y="564" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">0,66 m/s</text>
+  <text x="630" y="564" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">0,24 m.c.a.</text>
+  <text x="750" y="564" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">6,00 m.c.a.</text>
+  <text x="850" y="564" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">OK</text>
+  <rect x="45" y="582" width="850" height="26" fill="#223055" rx="4"/>
+  <text x="50" y="598" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="600">T6</text>
+  <text x="140" y="598" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">BANH → BACIA</text>
+  <text x="240" y="598" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12">0,3</text>
+  <text x="310" y="598" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12">0,15 L/s</text>
+  <text x="400" y="598" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="700">DN 20 (1/2")</text>
+  <text x="510" y="598" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12">0,66 m/s</text>
+  <text x="630" y="598" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">0,36 m.c.a.</text>
+  <text x="750" y="598" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="12" font-weight="700">6,47 m.c.a.</text>
+  <text x="850" y="598" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">OK</text>
+
+  <!-- Painel Central Direito: Aparelhos e Pontos de Utilização -->
+  <rect x="930" y="255" width="480" height="580" rx="8" fill="#1C2541" stroke="#3A506B" stroke-width="1" filter="url(#cardShadow)"/>
+  <text x="955" y="285" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="16" font-weight="700">
+    PRESSÕES NOS PONTOS DE CONSUMO
+  </text>
+  <line x1="955" y1="300" x2="1390" y2="300" stroke="#3A506B" stroke-width="1"/>
+
+  <text x="955" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">NÓ</text>
+  <text x="1010" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">APARELHO</text>
+  <text x="1210" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">EXIGIDO</text>
+  <text x="1290" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">REAL</text>
+  <text x="1350" y="325" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11" font-weight="700">LAUDO</text>
+  <line x1="955" y1="335" x2="1390" y2="335" stroke="#3A506B" stroke-width="0.8"/>
+  <text x="955" y="360" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12" font-weight="600">COZ</text>
+  <text x="1010" y="360" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">Pia de cozinha ou copa</text>
+  <text x="1210" y="360" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">1,00 m.c.a.</text>
+  <text x="1290" y="360" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">6,13 m.c.a.</text>
+  <text x="1350" y="360" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CONFORME</text>
+  <rect x="945" y="378" width="450" height="26" fill="#223055" rx="4"/>
+  <text x="955" y="394" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12" font-weight="600">LAVAND</text>
+  <text x="1010" y="394" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">Tanque de lavar roupas</text>
+  <text x="1210" y="394" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">1,00 m.c.a.</text>
+  <text x="1290" y="394" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">4,17 m.c.a.</text>
+  <text x="1350" y="394" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CONFORME</text>
+  <text x="955" y="428" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12" font-weight="600">LAVAND</text>
+  <text x="1010" y="428" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">Máquina de lavar roupas</text>
+  <text x="1210" y="428" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">1,00 m.c.a.</text>
+  <text x="1290" y="428" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">4,17 m.c.a.</text>
+  <text x="1350" y="428" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CONFORME</text>
+  <rect x="945" y="446" width="450" height="26" fill="#223055" rx="4"/>
+  <text x="955" y="462" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12" font-weight="600">CHUV</text>
+  <text x="1010" y="462" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">Chuveiro ou ducha elét...</text>
+  <text x="1210" y="462" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">1,00 m.c.a.</text>
+  <text x="1290" y="462" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">3,55 m.c.a.</text>
+  <text x="1350" y="462" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CONFORME</text>
+  <text x="955" y="496" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12" font-weight="600">LAV</text>
+  <text x="1010" y="496" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">Lavatório residencial ...</text>
+  <text x="1210" y="496" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">1,00 m.c.a.</text>
+  <text x="1290" y="496" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">6,00 m.c.a.</text>
+  <text x="1350" y="496" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CONFORME</text>
+  <rect x="945" y="514" width="450" height="26" fill="#223055" rx="4"/>
+  <text x="955" y="530" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12" font-weight="600">BACIA</text>
+  <text x="1010" y="530" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11">Bacia sanitária com ca...</text>
+  <text x="1210" y="530" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="11">1,00 m.c.a.</text>
+  <text x="1290" y="530" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">6,47 m.c.a.</text>
+  <text x="1350" y="530" fill="#06D6A0" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CONFORME</text>
+
+  <!-- Rodapé -->
+  <rect x="30" y="850" width="1380" height="35" rx="6" fill="#1C2541" stroke="#3A506B" stroke-width="1"/>
+  <text x="50" y="872" fill="#A7BED3" font-family="system-ui, sans-serif" font-size="12">
+    LOFRANO TECNOLOGIA · Zero Dependências Externas (Python Standard Library) · Conformidade Normativa com ABNT NBR 5626:2020 e NBR 5648
+  </text>
+  <text x="1390" y="872" fill="#48CAE4" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="end">
+    v1.0.0 · Código Aberto MIT
+  </text>
+</svg>
